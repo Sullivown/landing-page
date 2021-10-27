@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
+    font-family: sans-serif;
 }
 
 header, footer, .section{
@@ -40,8 +45,8 @@ nav > ul > li {
 }
 
 .section {
-    padding-top: 50px;
-    padding-bottom: 50px;   
+    padding-top: 5%;
+    padding-bottom: 5%;   
 }
 
 .hero {
@@ -50,7 +55,7 @@ nav > ul > li {
     display: flex;
     min-height: 500px;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
 }
 
 .hero > div {
@@ -60,9 +65,95 @@ nav > ul > li {
 h1 {
     font-size: 48px;
     font-weight: bolder;
+    margin-block-end: 0;
 }
 
 img {
-    max-height:100%;
-    max-width:100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.info-item {
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-item > img {
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 20%;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.quote-author {
+    text-align: end;
+    font-style:initial;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.call-to-action {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    color: #F9FAF8;
+    border-radius: 15px;
+}
+
+.call-to-action .button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action button {
+    border: 2px solid #F9FAF8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
